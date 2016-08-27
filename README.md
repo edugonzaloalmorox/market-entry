@@ -11,11 +11,18 @@ Entries are the dependent variable of the model. They are calculated according t
 
   - `geocode.R`: script showing the geocode of postal codes.
 
-This script provides information about the process for geo-referencing the units of analysis in the model. This process is important for the calculation of potential elements of interest such as the distances or the closer neighbours to the unit of analysis in the model. Also geo-referenced units are important for geographic data visualisations.
+This script provides information about the process for geo-referencing the units of analysis in the model. Geo-coding varibles is an important part for the calculation of potential elements of interest such as the distances or the closer neighbours to the units of analysis in the model. Also geo-referenced units are important for geographic data visualisations. Data used correspond to the [ONS postcode directory](https://data.gov.uk/dataset/ons-postcode-directory-uk-feb-2016)
 
-  - `imd.R`: script for linkin data referred to multiple deprivation index.
+  - `imd.R`: script for linking data referred to the index of multiple deprivation.
+  - `imd2015.csv`:  dataset corresponding to the multiple deprivation index for 2015. 
  
-Deprivation index is a measure of the deprivation levels associated to [Super Output Areas](http://webarchive.nationalarchives.gov.uk/20160105160709/http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas--soas-/index.html) areas in England. 
+[Deprivation](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/464430/English_Index_of_Multiple_Deprivation_2015_-_Guidance.pdf) indices are measures associated with the deprivation levels referred to [Super Output Areas](http://webarchive.nationalarchives.gov.uk/20160105160709/http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/super-output-areas--soas-/index.html) areas in England. 
+
+
+  - `expertise.R`: script for calculating the number of experts in the market. 
+
+Experts are those providers that operate in more than 1 market (_experts_) or 10 markets (_experts2_). It is a measure to understand the density and type of firms in the market.
+
   
   
   
