@@ -1,4 +1,4 @@
-setwd("/Users/Personas/My Cloud/Research/PhD/data/projects/Active care homes/july2016")
+setwd(".../Active care homes/july2016")
 
 library(readxl)
 library(plyr)
@@ -6,7 +6,7 @@ library(dplyr)
 library(stringr)
 library(tidyr)
 
-data = read_excel("/Users/Personas/My Cloud/Research/PhD/data/projects/Active care homes/july2016/active.xlsx", sheet = 2, col_names = TRUE, col_types = NULL)
+data = read_excel(".../july2016/active.xlsx", sheet = 2, col_names = TRUE, col_types = NULL)
 
 data = plyr::rename(data, c("Location ID"= "Location.ID",                                                                                                                                                                
                             "HSCA start date" = "location.start",                                                                                                                                                           
@@ -61,7 +61,7 @@ data = data %>% mutate(start.loc.month =format(location.start, "%m"),
     # calculate the number of care homes for each year 
     # calculate de the entry rates 
 
-# i. Get the entries and exits for the whole period available (2010 -2016) per month and year
+# Get the entries and exits for the whole period available (2010 -2016) per month and year
 
 
 counts.entry <- data %>% group_by(Local.Authority, start.loc.month, start.loc.year) %>% tally %>% arrange(Local.Authority, start.loc.year, start.loc.month) %>% as.data.frame()
@@ -101,12 +101,8 @@ counts.exit <- data %>% group_by(Local.Authority, end.loc.month, end.loc.year) %
         mutate(exit = ifelse(is.na(exit), 0, exit),
                entry = ifelse(is.na(entry), 0, entry),
                net = entry - exit) %>% as.data.frame() # net represents the net flow of entries and exits
-    
-        
-
-
       
-      #  Build the sample from march 2011 onwards. 
+ #  Build the sample from march 2011 onwards. 
       
         # get the total observations till march 2011
         meses = c("01", "02")
@@ -177,15 +173,6 @@ counts.exit <- data %>% group_by(Local.Authority, end.loc.month, end.loc.year) %
                                       
            mutate(entry.rate= cum.entries/lag(homes), 
                   entry.rate2 = entry.rate*100)
-          
-          
-          
-           write.csv(counts, "counts_entries.csv", row.names = FALSE)
-           write.csv(ex, "entry_exit_rates_august2016.csv")
-           
-           
-            
-          
-          
+
 
 
