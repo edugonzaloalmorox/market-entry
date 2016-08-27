@@ -5,7 +5,10 @@ This repository presents different scripts for static market entry analysis. It 
 Besides the data, the repository also includes various files that show the creation of both the dependent and independent variables used in the model as well as the files used for the econometric analysis
 
   - `active.xlsx`: Data with th register of care homes.
-  - `entries_2016_08.R`: R script for the calculation of entry rates
+  - `entries_2016_08.R`: script for the calculation of entry rates.
+  - `geocode.R`: script showing the geocode of postal codes.
+  - `imd.R`: script for linkin data referred to multiple deprivation index.
+  
   
 
 
