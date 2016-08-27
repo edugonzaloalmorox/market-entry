@@ -27,6 +27,12 @@ Experts are those providers that operate in more than 1 market (_experts_) or 10
 
 Home average prices characterize the market. Data for home prices corresponds to the [price paid data](https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads) released by the [Land Regsitry](https://www.gov.uk/government/organisations/land-registry). I calculate average prices for each month considering the [postcode sector](https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Postcode_sector) for each month. 
 
+  - `home_prices.R`: scripts for linking home prices to the information referred to the registry of care homes.
+  - `demographics.R`: scripts for linking demographic information associated with the type of population. 
+
+Data are extracted from the Census (2011) and the Department of Work and Pensions ([DWP](https://www.gov.uk/government/organisations/department-for-work-pensions/about/statistics)). I use data on unemployment and benefits. 
+
+
 
 
   
