@@ -1,4 +1,3 @@
-setwd(".../Active care homes/july2016")
 
 library(readxl)
 library(plyr)
