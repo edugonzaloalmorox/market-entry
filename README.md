@@ -34,8 +34,11 @@ Data are extracted from the Census (2011) and the Department of Work and Pension
 
   - `HHI_year`: calculation of the HHI index for sample of time intervals based on years.
   - `HHI_wave2`: calculation of the HHI index for sample of time intervals based on two years.
-
-
+ 
+HHI is a concentration index to analyse the competition in the market. 
+ 
+ - `Analysis`: configuration of the samples of analysis. Each sample corresponds to a different time interval. 
+ 
   
   
   
