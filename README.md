@@ -32,7 +32,8 @@ Home average prices characterize the market. Data for home prices corresponds to
 
 Data are extracted from the Census (2011) and the Department of Work and Pensions ([DWP](https://www.gov.uk/government/organisations/department-for-work-pensions/about/statistics)). I use data on unemployment and benefits. 
 
-
+  - `HHI_year`: calculation of the HHI index for sample of time intervals based on years.
+  - `HHI_wave2`: calculation of the HHI index for sample of time intervals based on two years.
 
 
   
