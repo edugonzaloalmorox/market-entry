@@ -41,6 +41,7 @@ HHI is a concentration index to analyse the competition in the market.
  
  - `Analysis`: configuration of the samples of analysis. Each sample corresponds to a different time interval. 
  
+ 
   
   
   
